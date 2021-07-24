@@ -1,0 +1,7 @@
+.background {
+    /* border: 2px solid red; */
+    height: 40vh;
+    background:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../imgs/back.png');
+    background-position: center;
+    background-size: cover;
+}
