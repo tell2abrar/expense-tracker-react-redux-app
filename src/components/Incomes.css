@@ -48,7 +48,7 @@
     width:3.5%;
     margin-left: 0;
     opacity: 0;
-    transition: margin-left 0.5s,width 0.5s,opacity 0.2s;
+    transition: margin-left 0.3s,width 0.3s,opacity 0.2s;
     text-align: left;
 
 }
@@ -56,5 +56,5 @@
 .income:hover .income__btn-delete {
     opacity: 1;
     /* width: 5%; */
-    margin-left: 20px;
+    margin-left: 25px;
 }

@@ -14,7 +14,7 @@ const Incomes = ({incomes,deleteIncome})=>{
                     <p className="income__desc">{income.desc}</p>
                     <p className="income__value">{`+ ${income.value}`}</p>
                     <button className="income__btn-delete" onClick={e=>deleteIncome(income.id)}>
-                        <i className="ion-ios-close-outline"></i>
+                    <i className="fa fa-trash" aria-hidden="true"></i>
                     </button>
                 </div>
             );

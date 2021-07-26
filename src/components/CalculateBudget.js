@@ -51,7 +51,7 @@ const CalculateBudget = ({type,changeType,desc,changeDescription,value,changeVal
                         resetValue();
                     }
                 }}>
-                    <i className="ion-ios-checkmark-outline"></i>
+                    <i class="fa fa-check-circle-o"></i>
                 </button>
             </div>
         </div>

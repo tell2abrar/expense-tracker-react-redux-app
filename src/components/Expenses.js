@@ -15,7 +15,7 @@ const Expenses = ({expenses,deleteExpense})=>{
                     <p className="expense__value">{`- ${expense.value}`}</p>
                     <p className="expense__percentage">{expense.percentage==null|Infinity?"---":`${expense.percentage}%`}</p>
                     <button className="expense__btn-delete" onClick={e=>deleteExpense(expense.id)}>
-                        <i className="ion-ios-close-outline"></i>
+                        <i className="fa fa-trash" aria-hidden="true"></i>
                     </button>
                 </div>
             );
