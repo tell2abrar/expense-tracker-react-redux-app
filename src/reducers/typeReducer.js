@@ -7,8 +7,6 @@ export default (state='inc', action)=>{
                 return 'exp';
             }
             break;
-        case 'RESET_TYPE':
-            return 'inc';
         default:
             return state;
     }

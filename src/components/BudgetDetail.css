@@ -1,0 +1,8 @@
+.budget-detail {
+    /* border: 1px solid red; */
+    width: 75%;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+}

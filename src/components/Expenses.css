@@ -1,0 +1,74 @@
+.expenses {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.expense__heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #FF5049
+}
+
+.expense {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 12px;
+    display: flex;
+    transition: padding 0.1s;
+}
+
+.expense:hover {
+    padding: 13px;
+}
+
+.expense:nth-of-type(even){
+    background-color: #f7f7f7;
+}
+
+.expense__desc {
+    width: 85%;
+}
+
+.expense__value {
+    width: 15%;
+    color: #FF5049;
+    text-align: right;
+}
+
+.expense__percentage {
+    color: #FF5049;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+    font-size: 11px;
+    background-color: #FFDAD9;
+    padding: 3px;
+    border-radius: 3px;
+    width: 40px;
+    text-align: center;
+}
+
+.expense__btn-delete {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 1;
+    color: #FF5049;
+    width:3.5%;
+    margin-left: 0;
+    opacity: 0;
+    transition: margin-left 0.3s,width 0.3s,opacity 0.2s;
+    text-align: left;
+
+}
+
+.expense:hover .expense__btn-delete {
+    opacity: 1;
+    /* width: 5%; */
+    margin-left: 25px;
+}

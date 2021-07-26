@@ -1,7 +1,9 @@
 import React from 'react';
+
 import './App.css';
 import Header from './Header';
 import CalculateBudget from './CalculateBudget';
+import BudgetDetail from './BudgetDetail';
 
 const App = ()=>{
 
@@ -10,6 +12,7 @@ const App = ()=>{
             <div className="background">
                 <Header />
                 <CalculateBudget />
+                <BudgetDetail />
             </div>
         </div>
     );

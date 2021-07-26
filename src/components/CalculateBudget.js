@@ -17,7 +17,7 @@ const CalculateBudget = ({type,changeType,desc,changeDescription,value,changeVal
 
     useEffect(()=>{
         if(expenses.length>0){
-            const expensesWithUpdatedPercentage = expenses.map(expense=>{expense.percentage=Math.ceil((expense.value/totallIncome)*100);
+            const expensesWithUpdatedPercentage = expenses.map(expense=>{expense.percentage=Math.round((expense.value/totallIncome)*100);
             return expense});
             updateExpensePercentage(expensesWithUpdatedPercentage);
         }
@@ -42,15 +42,13 @@ const CalculateBudget = ({type,changeType,desc,changeDescription,value,changeVal
                         changeCounter();
                         resetDescription();
                         resetValue();
-                        alert('income is added');
                     }else if(type === 'exp'){
-                        const percentage = totallIncome===0?null:((value/totallIncome)*100);
+                        const percentage = totallIncome===0?null:Math.round(((value/totallIncome)*100));
                         const newExpense = {id:counter,type,desc,value,percentage};
                         addExpense(newExpense);
                         changeCounter();
                         resetDescription();
                         resetValue();
-                        alert('expense is added');
                     }
                 }}>
                     <i className="ion-ios-checkmark-outline"></i>
