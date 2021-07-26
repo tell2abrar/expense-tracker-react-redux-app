@@ -16,7 +16,7 @@ import { updateExpensePercentage } from '../actions';
 const CalculateBudget = ({type,changeType,desc,changeDescription,value,changeValue,counter,changeCounter,addIncome,resetValue,resetDescription,totallIncome,addExpense,updateExpensePercentage,expenses})=>{
 
     useEffect(()=>{
-        if(expenses.length>0){
+        if(expenses.length>0 ){
             const expensesWithUpdatedPercentage = expenses.map(expense=>{expense.percentage=Math.round((expense.value/totallIncome)*100);
             return expense});
             updateExpensePercentage(expensesWithUpdatedPercentage);
